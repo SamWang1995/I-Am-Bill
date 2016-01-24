@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BeLikeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.62483877002704169" green="1" blue="0.61592371299071624" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="vax-yY-UaJ" kind="show" identifier="go" id="Ejd-0G-4sZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="419" y="362"/>
+        </scene>
+        <!--Pick View Controller-->
+        <scene sceneID="1wr-v5-1up">
+            <objects>
+                <viewController id="HBW-05-emf" customClass="PickViewController" customModule="BeLikeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xJg-5J-LEB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hdh-e4-hbk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FDM-3w-WR7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONo-RW-ytZ">
+                                <rect key="frame" x="150" y="181" width="173" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eOE-bh-AaS">
+                                <rect key="frame" x="160" y="237" width="189" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="91E-dG-y9G"/>
+                                    <constraint firstAttribute="height" constant="50" id="LdJ-d7-W5e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhb-uB-vJ8">
+                                <rect key="frame" x="235" y="464" width="130" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="ltW-w6-hmo"/>
+                                    <constraint firstAttribute="height" constant="50" id="zNA-7h-y9N"/>
+                                </constraints>
+                                <state key="normal" title="I Am Bill" backgroundImage="button3">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BeLikeMe:" destination="HBW-05-emf" eventType="touchUpInside" id="jXQ-a7-oa2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.85844224280000003" green="0.93296768939999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qhb-uB-vJ8" firstAttribute="top" secondItem="xJg-5J-LEB" secondAttribute="bottom" constant="400" id="GbQ-cK-TVN"/>
+                            <constraint firstItem="ONo-RW-ytZ" firstAttribute="centerX" secondItem="FDM-3w-WR7" secondAttribute="centerX" id="QOe-6G-r1G"/>
+                            <constraint firstItem="ONo-RW-ytZ" firstAttribute="top" secondItem="xJg-5J-LEB" secondAttribute="bottom" constant="100" id="Zr1-aS-bmQ"/>
+                            <constraint firstItem="eOE-bh-AaS" firstAttribute="centerX" secondItem="FDM-3w-WR7" secondAttribute="centerX" id="b6G-5D-8HU"/>
+                            <constraint firstItem="eOE-bh-AaS" firstAttribute="top" secondItem="xJg-5J-LEB" secondAttribute="bottom" constant="250" id="dvR-w0-3Xl"/>
+                            <constraint firstItem="qhb-uB-vJ8" firstAttribute="centerX" secondItem="FDM-3w-WR7" secondAttribute="centerX" id="w6p-By-oM8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fmv-h0-kTh"/>
+                    <connections>
+                        <outlet property="name" destination="eOE-bh-AaS" id="jN6-4x-EuP"/>
+                        <segue destination="Jdw-w3-tSK" kind="show" identifier="beLikeMe" id="iLo-yg-Pzh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xq3-fb-YVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1798" y="362"/>
+        </scene>
+        <!--Share View Controller-->
+        <scene sceneID="Kdv-yo-GTL">
+            <objects>
+                <viewController id="Jdw-w3-tSK" customClass="ShareViewController" customModule="BeLikeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ryR-rY-b4I"/>
+                        <viewControllerLayoutGuide type="bottom" id="jed-aT-nPX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ws6-Vg-WK2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiL-TD-iXT">
+                                <rect key="frame" x="70" y="299" width="460" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.9377214398" blue="0.96769299070000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWZ-so-jLT">
+                                <rect key="frame" x="120" y="452" width="203" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="21R-Md-Mwe"/>
+                                    <constraint firstAttribute="width" constant="125" id="jke-nj-pT0"/>
+                                </constraints>
+                                <state key="normal" title="Share!" backgroundImage="button3">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="share:" destination="Jdw-w3-tSK" eventType="touchUpInside" id="CYe-NY-RYB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAL-qf-ybO">
+                                <rect key="frame" x="120" y="508" width="230" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="3p7-NX-Ctf"/>
+                                    <constraint firstAttribute="height" constant="40" id="zhH-3j-6Od"/>
+                                </constraints>
+                                <state key="normal" title="That's not me!" backgroundImage="button3">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="redo:" destination="Jdw-w3-tSK" eventType="touchUpInside" id="KRF-4w-7t9"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="1bA-bQ-CS0">
+                                <rect key="frame" x="231" y="94" width="138" height="197"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.9377214398" blue="0.96769299070000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pWZ-so-jLT" firstAttribute="top" secondItem="eiL-TD-iXT" secondAttribute="bottom" constant="60" id="2mz-pm-WNe"/>
+                            <constraint firstItem="jed-aT-nPX" firstAttribute="top" secondItem="eiL-TD-iXT" secondAttribute="bottom" constant="173" id="9tY-ch-mGf"/>
+                            <constraint firstItem="eiL-TD-iXT" firstAttribute="leading" secondItem="ws6-Vg-WK2" secondAttribute="leadingMargin" constant="50" id="AFl-gg-EqD"/>
+                            <constraint firstItem="PAL-qf-ybO" firstAttribute="top" secondItem="ryR-rY-b4I" secondAttribute="bottom" constant="500" id="BsL-lk-RxW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eiL-TD-iXT" secondAttribute="trailing" constant="50" id="K6G-RD-SpE"/>
+                            <constraint firstItem="1bA-bQ-CS0" firstAttribute="top" secondItem="ryR-rY-b4I" secondAttribute="bottom" constant="30" id="Ljv-lh-GBz"/>
+                            <constraint firstItem="eiL-TD-iXT" firstAttribute="centerX" secondItem="ws6-Vg-WK2" secondAttribute="centerX" id="Mvz-JA-31T"/>
+                            <constraint firstItem="1bA-bQ-CS0" firstAttribute="centerX" secondItem="ws6-Vg-WK2" secondAttribute="centerX" id="QVA-bG-wnT"/>
+                            <constraint firstItem="PAL-qf-ybO" firstAttribute="centerX" secondItem="ws6-Vg-WK2" secondAttribute="centerX" id="S3a-FJ-8a1"/>
+                            <constraint firstItem="pWZ-so-jLT" firstAttribute="centerX" secondItem="ws6-Vg-WK2" secondAttribute="centerX" id="pS0-Yf-e3s"/>
+                            <constraint firstItem="eiL-TD-iXT" firstAttribute="top" secondItem="ryR-rY-b4I" secondAttribute="bottom" constant="235" id="wEa-pb-U2l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BeLikeMeText" destination="eiL-TD-iXT" id="Q0B-xt-aVy"/>
+                        <outlet property="photo" destination="1bA-bQ-CS0" id="CvX-cm-b0q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Qb-vH-1vk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2503" y="362"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zLK-HA-MO3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vax-yY-UaJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7dq-SV-aof">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HBW-05-emf" kind="relationship" relationship="rootViewController" id="qXB-Ed-3Ko"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fnw-yT-fUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112" y="362"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button3" width="532" height="109"/>
+        <image name="me" width="100" height="199"/>
+    </resources>
+</document>
